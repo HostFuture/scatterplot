@@ -31,7 +31,7 @@ To install the ReactJS Application, download the zip of this repository or clone
 
 ```yarn install```
 
-To setup the Flask Application, go to **api** directory under **scatterplot** directory and with the help of [requirement.txt](/scatterplot/api/requirements.txt) file install all the dependancies. It is recommended to setup a virtual environment for the flast application before installing requirement.txt
+To setup the Flask Application, go to **api** directory under **scatterplot** directory and with the help of [requirement.txt](/api/requirements.txt) file install all the dependancies. It is recommended to setup a virtual environment for the flast application before installing requirement.txt
 
 ```pip install -r requirement.txt```
 
@@ -41,7 +41,7 @@ To setup the Flask Application, go to **api** directory under **scatterplot** di
 
 ## Running the Code
 
-Once the prerequisits are met and the environment is setup you can run the following commands. By default Flask application runs at port 5000 and reactjs in post 3000, if you have to modify it, you can do it in the code and also please note that if the default port is changed for Flask, please update the changed port to [package.json](/scatterplot/package.json) under **proxy** configuration.
+Once the prerequisits are met and the environment is setup you can run the following commands. By default Flask application runs at port 5000 and reactjs in post 3000, if you have to modify it, you can do it in the code and also please note that if the default port is changed for Flask, please update the changed port to [package.json](/package.json) under **proxy** configuration.
 
 ### Start the application
 
