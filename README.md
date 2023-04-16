@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Getting Started with Scatterplot with ReactJS & Flask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using ReactJS as Front-end and Flask as Backend
 
-## Available Scripts
+## Index
 
-In the project directory, you can run:
+* [Scatter Plot](#scatter-plot)
+* [Prerequisits](#prerequisits)
+* [Installation](#installation)
+* [Demo Preview](#demo-preview)
+* [Running the Code](#running-the-code)
+  * [Start the application](#start-the-application)
+* [User Guide](#user-guide)
+* [Developer Contact](#developer-contact)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Scatter Plot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Scatterplot is the process of creating scatter plot of a dataset to visualize it's trend. This project contains two parts, the backend, where we have utilized Python Flask and the frontend, where we have utilized React JS.
 
-### `yarn test`
+## Prerequisits
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To initialize with this project the following software packages should be installed in the host machine
+* Python v3.10.10
+* Node JS v9.4.0
+* yarn v1.22.19
 
-### `yarn build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install the ReactJS Application, download the zip of this repository or clone it to your system and go to the **scatterplot** directory and run the following command to install all the dependancies of this project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```yarn install```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To setup the Flask Application, go to **api** directory under **scatterplot** directory and with the help of [requirement.txt](/scatterplot/api/requirements.txt) file install all the dependancies. It is recommended to setup a virtual environment for the flast application before installing requirement.txt
 
-### `yarn eject`
+```pip install -r requirement.txt```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Demo Preview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Scatterplot - Full Stack Assignment](/scatterplot/screenshot/image.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Running the Code
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the prerequisits are met and the environment is setup you can run the following commands. By default Flask application runs at port 5000 and reactjs in post 3000, if you have to modify it, you can do it in the code and also please note that if the default port is changed for Flask, please update the changed port to [package.json](/scatterplot/package.json) under **proxy** configuration.
 
-## Learn More
+### Start the application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+First you have to start the backend application (Flask) before starting ReactJS. To start the application you can use the shortcut (__the defination is updated under package.json__).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+yarn start-api
+```
 
-### Code Splitting
+Once the backend code is up, then execute the following command to start the front end code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+yarn start
+```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## User Guide
 
-### Making a Progressive Web App
+Upon the application is up and running, the user will be awarded with the UI at port number 3000 and the backend api at 5000(_unless specified otherwise_). On the initial screen, the user will be given a choice of either **Uploading a Dataset** or **Generating a Random Dataset**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Upon seleting the **Upload Dataset** option, user have to provide an CSV file containing data with the column name `x` and `y`.
 
-### Advanced Configuration
+Post uploading the dataset, or clicking on **Generate Dataset** another button will show on the screen **Show Chart**. It will confirm that the chart is loaded and ready to view. After clicking on that button the chat will be loaded on the screen.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Developer Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Debjit Sadhukhan
 
-### `yarn build` fails to minify
++91 83358 39446
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+debjit95@engineer.com
+
+Bangalore, India
