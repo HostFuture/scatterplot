@@ -37,7 +37,7 @@ To setup the Flask Application, go to **api** directory under **scatterplot** di
 
 ## Demo Preview
 
-![Scatterplot - Full Stack Assignment](/scatterplot/screenshot/image.png)
+![Scatterplot - Full Stack Assignment](/screenshot/image.png)
 
 ## Running the Code
 
